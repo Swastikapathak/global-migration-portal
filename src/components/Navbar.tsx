@@ -51,7 +51,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container-custom mx-auto flex items-center justify-between">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         
         <div className="hidden lg:flex items-center gap-8">
           <nav>

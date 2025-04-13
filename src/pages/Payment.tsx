@@ -2,6 +2,7 @@
 import PaymentForm from "@/components/PaymentForm";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { toast } from "@/lib/toast";
 
 const PaymentPage = () => {
   const navigate = useNavigate();
@@ -9,8 +10,9 @@ const PaymentPage = () => {
   useEffect(() => {
     document.title = "Payment - Global Migration Portal";
     
-    // For debugging
+    // For debugging and to provide feedback to the user
     console.log("Payment page loaded");
+    toast.info("Payment page loaded successfully");
   }, []);
   
   const handlePaymentSuccess = () => {
