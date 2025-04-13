@@ -3,12 +3,20 @@ import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Layout = () => {
   const location = useLocation();
+  const [isPageTransitioning, setIsPageTransitioning] = useState(false);
 
   useEffect(() => {
+    setIsPageTransitioning(true);
+    
+    // Reset transition state after slight delay
+    const transitionTimer = setTimeout(() => {
+      setIsPageTransitioning(false);
+    }, 300);
+    
     const setupAnimations = () => {
       const observerCallback = (entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry) => {
@@ -34,17 +42,20 @@ const Layout = () => {
     };
 
     // Small delay to ensure DOM is ready before setting up animations
-    const timer = setTimeout(() => {
+    const animationTimer = setTimeout(() => {
       setupAnimations();
     }, 100);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(animationTimer);
+      clearTimeout(transitionTimer);
+    };
   }, [location.pathname]); // Re-run when route changes
 
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1">
+      <main className={`flex-1 ${isPageTransitioning ? 'animate-fade-in' : ''}`}>
         <Outlet />
       </main>
       <WhatsAppButton />

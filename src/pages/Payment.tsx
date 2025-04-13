@@ -1,18 +1,27 @@
 
 import PaymentForm from "@/components/PaymentForm";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "@/lib/toast";
 
 const PaymentPage = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
     document.title = "Payment - Global Migration Portal";
     
     // For debugging and to provide feedback to the user
     console.log("Payment page loaded");
-    toast.info("Payment page loaded successfully");
+    
+    // Set a short timeout to ensure the page has time to render
+    // before showing the payment form
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+      toast.info("Payment page loaded successfully");
+    }, 500);
+    
+    return () => clearTimeout(timer);
   }, []);
   
   const handlePaymentSuccess = () => {
@@ -90,11 +99,18 @@ const PaymentPage = () => {
             </div>
             
             <div className="md:col-span-3 animate-on-scroll">
-              <PaymentForm 
-                amount={150} 
-                description="Immigration Consultation (60 minutes)" 
-                onSuccess={handlePaymentSuccess}
-              />
+              {isLoading ? (
+                <div className="flex flex-col items-center justify-center h-64">
+                  <div className="w-16 h-16 border-4 border-gold border-t-transparent rounded-full animate-spin"></div>
+                  <p className="mt-4 text-gray-600 font-medium">Loading payment form...</p>
+                </div>
+              ) : (
+                <PaymentForm 
+                  amount={150} 
+                  description="Immigration Consultation (60 minutes)" 
+                  onSuccess={handlePaymentSuccess}
+                />
+              )}
             </div>
           </div>
         </div>
