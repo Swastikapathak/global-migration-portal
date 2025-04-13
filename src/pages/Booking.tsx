@@ -2,6 +2,8 @@
 import BookingCalendar from "@/components/BookingCalendar";
 import { ClipboardList } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const BookingPage = () => {
   useEffect(() => {
@@ -20,6 +22,13 @@ const BookingPage = () => {
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Schedule a personalized consultation with our immigration experts to discuss your options and develop a tailored immigration strategy.
             </p>
+            <div className="mt-4">
+              <Button asChild className="bg-gold hover:bg-gold/90 text-black">
+                <Link to="/payment">
+                  Skip to Payment Page
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { CalendarIcon, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "@/lib/toast";
 import { z } from "zod";
 
@@ -35,6 +35,7 @@ const BookingCalendar = () => {
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [step, setStep] = useState<number>(1); // 1: date/time selection, 2: personal details
+  const navigate = useNavigate();
   
   const [formData, setFormData] = useState({
     name: "",
@@ -96,8 +97,8 @@ const BookingCalendar = () => {
       
       toast.success("Consultation successfully booked! You will receive a confirmation email shortly.");
       
-      // Redirect to payment page (would be handled with React Router)
-      window.location.href = "/payment";
+      // Redirect to payment page using React Router navigate
+      navigate("/payment");
     } catch (error) {
       if (error instanceof z.ZodError) {
         const newErrors: Record<string, string> = {};

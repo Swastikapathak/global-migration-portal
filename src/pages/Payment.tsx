@@ -8,6 +8,9 @@ const PaymentPage = () => {
   
   useEffect(() => {
     document.title = "Payment - Global Migration Portal";
+    
+    // For debugging
+    console.log("Payment page loaded");
   }, []);
   
   const handlePaymentSuccess = () => {
