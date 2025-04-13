@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
+import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import BlogPreview from "@/components/BlogPreview";
+import CtaSection from "@/components/CtaSection";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Global Migration Portal - Your Gateway to Global Opportunities";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <HeroSection />
+      <ServicesSection />
+      <StatsSection />
+      <TestimonialsSection />
+      <BlogPreview />
+      <CtaSection />
+    </>
   );
 };
 
