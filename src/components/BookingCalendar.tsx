@@ -4,7 +4,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { CalendarIcon, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 import { z } from "zod";
 
 const bookingFormSchema = z.object({

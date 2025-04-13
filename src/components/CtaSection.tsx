@@ -1,10 +1,9 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CalendarPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { z } from "zod";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -25,7 +24,6 @@ const CtaSection = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev) => {
         const newErrors = { ...prev };
@@ -40,7 +38,6 @@ const CtaSection = () => {
     
     try {
       formSchema.parse(formData);
-      // Form is valid, proceed
       toast.success("Thank you! We'll contact you shortly to schedule your consultation.");
       setFormData({ name: "", email: "", phone: "" });
     } catch (error) {

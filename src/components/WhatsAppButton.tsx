@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 
 const WhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);

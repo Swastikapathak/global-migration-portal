@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { z } from "zod";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/lib/toast";
 import { Eye, EyeOff, CreditCard, User, Calendar } from "lucide-react";
 
 const paymentFormSchema = z.object({
