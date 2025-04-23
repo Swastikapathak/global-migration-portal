@@ -153,7 +153,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           rows={6}
-          className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold ${
+          className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha ${
             errors.message ? "border-red-500" : "border-gray-300"
           }`}
           placeholder="Your message"
@@ -164,7 +164,7 @@ const ContactForm = () => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="bg-gold hover:bg-gold/90 text-black font-semibold py-3 px-8 rounded-lg"
+        className="bg-mocha hover:bg-gold/90 text-black font-semibold py-3 px-8 rounded-lg"
       >
         {isSubmitting ? "Sending..." : "Send Message"} {!isSubmitting && <ChevronRight size={16} className="ml-1" />}
       </Button>

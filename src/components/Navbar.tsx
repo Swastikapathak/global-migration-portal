@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
-  { name: "FAQs", path: "/faq" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
+  { name: "About", path: "/About" },
+  { name: "Services", path: "/Services" },
+  { name: "FAQs", path: "/Faq" },
+  { name: "Blog", path: "/Blog" },
+  { name: "Contact", path: "/Contact" },
 ];
 
 const Navbar = () => {
@@ -46,7 +46,7 @@ const Navbar = () => {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white shadow-md py-3"
+          ? "bg-charcoal shadow-md py-3 "
           : "bg-transparent py-5"
       }`}
     >
@@ -62,8 +62,8 @@ const Navbar = () => {
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className={`font-montserrat font-medium hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gold after:transition-transform hover:after:origin-bottom-left hover:after:scale-x-100 ${
-                      location.pathname === link.path ? "text-gold after:origin-bottom-left after:scale-x-100" : "text-gray-800"
+                    className={` no-underline font-montserrat font-medium hover:text-gold transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gold after:transition-transform hover:after:origin-bottom-left hover:after:scale-x-100  ${
+                      location.pathname === link.path ? "text-gold after:origin-bottom-left after:scale-x-100" : "text-white"
                     }`}
                   >
                     {link.name}
@@ -72,7 +72,7 @@ const Navbar = () => {
               ))}
             </ul>
           </nav>
-          <Button asChild className="bg-black hover:bg-black/90 hover:scale-105 transition-transform">
+          <Button asChild className="bg-mocha text-black hover:bg-black/90 hover:scale-105 transition-transform">
             <Link to="/booking">Book Consultation</Link>
           </Button>
         </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   className={`block py-2 font-montserrat font-medium hover:text-gold transition-colors ${
-                    location.pathname === link.path ? "text-gold" : "text-gray-800"
+                    location.pathname === link.path ? "text-black" : "text-gray-800"
                   }`}
                   onClick={closeMenu}
                 >
@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="pt-3">
-              <Button asChild className="w-full bg-black hover:bg-black/90">
+              <Button asChild className="w-full bg-mocha hover:bg-black/90">
                 <Link to="/booking" onClick={closeMenu}>Book Consultation</Link>
               </Button>
             </li>

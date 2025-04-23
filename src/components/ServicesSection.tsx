@@ -1,6 +1,7 @@
 
 import { useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
+import canadaImage from "/public/images/canada.avif";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -9,7 +10,9 @@ const services = [
     id: 1,
     title: "Canada Immigration",
     description: "Express Entry, Provincial Nominee Programs, Family Sponsorship, and Student Visas with Pathway to PR",
-    imageUrl: "https://images.unsplash.com/photo-1486130866659-157d3080a652?ixlib=rb-4.0.3",
+    /*imageUrl: "https://images.unsplash.com/photo-1486130866659-157d3080a652?ixlib=rb-4.0.3",*/
+    /*imageUrl:"https://unsplash.com/photos/a-red-and-white-flag-KuvEmUutwcg",*/
+    src: canadaImage,
     link: "/services"
   },
   {
@@ -99,7 +102,7 @@ const ServicesSection = () => {
               <CardFooter>
                 <Link 
                   to={service.link}
-                  className="text-gold font-semibold flex items-center hover:underline"
+                  className="text-mocha font-semibold flex items-center hover:underline"
                 >
                   Learn More <ArrowRight size={16} className="ml-2" />
                 </Link>
@@ -111,7 +114,7 @@ const ServicesSection = () => {
         <div className="text-center mt-12">
           <Link 
             to="/services" 
-            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-gold text-gold font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
+            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-mocha text-black font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
           >
             View All Services <ArrowRight size={18} className="ml-2" />
           </Link>

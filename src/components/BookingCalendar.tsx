@@ -122,7 +122,7 @@ const BookingCalendar = () => {
       {step === 1 ? (
         <div>
           <h3 className="text-xl font-bold mb-6 flex items-center">
-            <CalendarIcon className="mr-2 text-gold" /> Select Date & Time
+            <CalendarIcon className="mr-2 text-mocha" /> Select Date & Time
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
@@ -142,7 +142,7 @@ const BookingCalendar = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-3 flex items-center">
-                <Clock className="mr-2 text-gold" size={18} /> Available Time Slots
+                <Clock className="mr-2 text-mocha" size={18} /> Available Time Slots
               </h4>
               {date ? (
                 <div className="grid grid-cols-2 gap-2">
@@ -152,7 +152,7 @@ const BookingCalendar = () => {
                       type="button"
                       variant={selectedTime === time ? "default" : "outline"}
                       className={`justify-start h-10 px-3 ${
-                        selectedTime === time ? "bg-gold text-black hover:bg-gold/90" : ""
+                        selectedTime === time ? "bg-mocha text-black hover:bg-gold/90" : ""
                       }`}
                       onClick={() => setSelectedTime(time)}
                     >
@@ -171,7 +171,7 @@ const BookingCalendar = () => {
             </Button>
             <Button
               onClick={handleNextStep}
-              className="bg-gold hover:bg-gold/90 text-black"
+              className="bg-mocha hover:bg-gold/90 text-black"
               disabled={!date || !selectedTime}
             >
               Next: Your Details

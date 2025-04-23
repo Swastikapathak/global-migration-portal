@@ -105,7 +105,7 @@ const BlogPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              Immigration <span className="text-gold">Blog</span>
+              Immigration <span className="text-mocha">Blog</span>
             </h1>
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Stay informed with the latest immigration news, policy updates, and success stories from around the world.
@@ -135,7 +135,7 @@ const BlogPage = () => {
                 <Button
                   key={category}
                   variant={selectedCategory === category ? "default" : "outline"}
-                  className={selectedCategory === category ? "bg-gold hover:bg-gold/90 text-black" : ""}
+                  className={selectedCategory === category ? "bg-mocha hover:bg-gold/90 text-black" : ""}
                   onClick={() => setSelectedCategory(category)}
                 >
                   {category}
@@ -158,7 +158,7 @@ const BlogPage = () => {
                   </div>
                   <div className="p-6">
                     <div className="flex justify-between items-center mb-3">
-                      <span className="text-sm text-gold font-medium">{post.category}</span>
+                      <span className="text-sm text-mocha font-medium">{post.category}</span>
                       <span className="text-sm text-gray-500">{post.date}</span>
                     </div>
                     <h3 className="text-xl font-bold mb-3">{post.title}</h3>
@@ -167,7 +167,7 @@ const BlogPage = () => {
                       <span className="text-sm text-gray-600">By {post.author}</span>
                       <Link
                         to="#"
-                        className="inline-flex items-center text-gold font-semibold hover:underline"
+                        className="inline-flex items-center text-mocha font-semibold hover:underline"
                       >
                         Read More <ArrowRight size={16} className="ml-1" />
                       </Link>
@@ -196,7 +196,7 @@ const BlogPage = () => {
                     </button>
                   </li>
                   <li>
-                    <button className="p-2 w-10 h-10 flex items-center justify-center rounded-md bg-gold text-black font-medium">
+                    <button className="p-2 w-10 h-10 flex items-center justify-center rounded-md bg-mocha text-black font-medium">
                       1
                     </button>
                   </li>

@@ -34,7 +34,7 @@ const BlogPreview = () => {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <h2 className="section-heading animate-on-scroll">
-          Latest <span className="text-gold">Updates</span>
+          Latest <span className="text-mocha">Updates</span>
         </h2>
         <p className="section-subheading animate-on-scroll">
           Stay informed with the latest immigration news, policy changes, and success stories from around the world.
@@ -53,14 +53,14 @@ const BlogPreview = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex justify-between items-center mb-3">
-                    <span className="text-sm text-gold font-medium">{post.category}</span>
+                    <span className="text-sm text-mocha font-medium">{post.category}</span>
                     <span className="text-sm text-gray-500">{post.date}</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3">{post.title}</h3>
                   <p className="text-gray-600 mb-4 flex-grow">{post.excerpt}</p>
                   <Link
                     to="/blog"
-                    className="inline-flex items-center font-semibold text-gold hover:underline mt-auto"
+                    className="inline-flex items-center font-semibold text-mocha hover:underline mt-auto"
                   >
                     Read More <ArrowRight size={16} className="ml-2" />
                   </Link>
@@ -73,7 +73,7 @@ const BlogPreview = () => {
         <div className="text-center mt-12">
           <Link
             to="/blog"
-            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-gold text-gold font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
+            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-mocha text-black font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
           >
             View All Articles <ArrowRight size={18} className="ml-2" />
           </Link>

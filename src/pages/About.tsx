@@ -16,7 +16,7 @@ const AboutPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              About <span className="text-gold">Global Migration Portal</span>
+              About <span className="text-mocha">Global Migration Portal</span>
             </h1>
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Your trusted partner for immigration services worldwide. With years of experience and a team of experts, we help you navigate the complex immigration journey with confidence.
@@ -31,7 +31,7 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-              <div className="h-1 w-20 bg-gold mb-6"></div>
+              <div className="h-1 w-20 bg-mocha mb-6"></div>
               <p className="text-gray-700 mb-4">
                 Global Migration Portal was founded in 2009 with a simple mission: to help people realize their dreams of a better life abroad. What started as a small consultancy has grown into a leading immigration service provider with offices in multiple countries.
               </p>
@@ -58,7 +58,7 @@ const AboutPage = () => {
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">Our Mission and Values</h2>
-            <div className="h-1 w-20 bg-gold mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-mocha mx-auto mb-6"></div>
             <p className="text-gray-700">
               At Global Migration Portal, we're committed to transforming lives through expert immigration guidance. Our values shape everything we do, from our first consultation to the moment you receive your visa.
             </p>
@@ -121,7 +121,7 @@ const AboutPage = () => {
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">Meet Our Expert Team</h2>
-            <div className="h-1 w-20 bg-gold mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-mocha mx-auto mb-6"></div>
             <p className="text-gray-700">
               Our team of immigration specialists brings decades of combined experience to help you navigate the complexities of global migration. Each consultant is certified and continuously updates their knowledge to stay current with changing immigration policies.
             </p>
@@ -189,7 +189,7 @@ const AboutPage = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-gold mb-4">{member.title}</p>
+                  <p className="text-mocha mb-4">{member.title}</p>
                   <p className="text-gray-600">{member.description}</p>
                 </div>
               </div>
@@ -203,7 +203,7 @@ const AboutPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">Why Choose Global Migration Portal</h2>
-            <div className="h-1 w-20 bg-gold mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-mocha mx-auto mb-6"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -221,14 +221,14 @@ const AboutPage = () => {
                 key={i}
                 className="flex items-start gap-4 animate-on-scroll"
               >
-                <CheckCircle className="text-gold mt-1 flex-shrink-0" />
+                <CheckCircle className="text-mocha mt-1 flex-shrink-0" />
                 <p className="text-gray-300">{reason}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-16 animate-on-scroll">
-            <Button asChild className="bg-gold hover:bg-gold/90 text-black">
+            <Button asChild className="bg-mocha hover:bg-gold/90 text-black">
               <Link to="/contact">Contact Our Team</Link>
             </Button>
           </div>

@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-charcoal text-white">
       <div className="container-custom pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="space-y-4">
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-montserrat text-lg font-semibold mb-5 text-gold">Quick Links</h3>
+            <h3 className="font-montserrat text-lg font-semibold mb-5 text-mocha">Quick Links</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-gold transition-colors duration-200">
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-montserrat text-lg font-semibold mb-5 text-gold">Immigration Services</h3>
+            <h3 className="font-montserrat text-lg font-semibold mb-5 text-mocha">Immigration Services</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-gold transition-colors duration-200">
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-montserrat text-lg font-semibold mb-5 text-gold">Contact Us</h3>
+            <h3 className="font-montserrat text-lg font-semibold mb-5 text-mocha">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-3 text-gold shrink-0 mt-1" size={18} />

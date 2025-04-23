@@ -34,7 +34,7 @@ const BookingPage = () => {
       </section>
 
       {/* Booking Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-gold/10">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="animate-on-scroll">
@@ -43,14 +43,14 @@ const BookingPage = () => {
                 Our consultation sessions are designed to provide you with personalized immigration advice tailored to your unique situation and goals.
               </p>
               
-              <div className="bg-gold/10 border border-gold/20 rounded-lg p-6 mb-8">
-                <h3 className="flex items-center text-xl font-bold mb-4">
-                  <ClipboardList className="mr-2 text-gold" size={24} />
+              <div className="bg-charcoal border border-gold/20 rounded-lg p-6 mb-8">
+                <h3 className="flex items-center text-xl text-white font-bold mb-4">
+                  <ClipboardList className="mr-2 text-white" size={24} />
                   What to Expect
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start">
-                    <span className="bg-gold text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-mocha text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       1
                     </span>
                     <span>
@@ -58,7 +58,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-gold text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       2
                     </span>
                     <span>
@@ -66,7 +66,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-gold text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       3
                     </span>
                     <span>
@@ -74,7 +74,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-gold text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       4
                     </span>
                     <span>
@@ -82,7 +82,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-gold text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       5
                     </span>
                     <span>

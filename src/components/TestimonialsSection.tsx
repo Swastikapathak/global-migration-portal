@@ -87,7 +87,7 @@ const TestimonialsSection = () => {
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <h2 className="section-heading animate-on-scroll">
-          Success <span className="text-gold">Stories</span>
+          Success <span className="text-mocha">Stories</span>
         </h2>
         <p className="section-subheading animate-on-scroll">
           Don't just take our word for it. Hear from our clients who have successfully migrated with our help.
@@ -103,7 +103,7 @@ const TestimonialsSection = () => {
                 <div key={testimonial.id} className="min-w-full px-4">
                   <div className="bg-white p-6 md:p-10 rounded-lg shadow-lg">
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-gold">
+                      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-mocha">
                         <img 
                           src={testimonial.image} 
                           alt={testimonial.name} 
@@ -120,7 +120,7 @@ const TestimonialsSection = () => {
                           <p className="text-gray-600 italic mb-6">"{testimonial.text}"</p>
                           <footer>
                             <div className="font-montserrat font-bold text-lg">{testimonial.name}</div>
-                            <div className="text-gold">{testimonial.title}</div>
+                            <div className="text-mocha">{testimonial.title}</div>
                           </footer>
                         </blockquote>
                       </div>
@@ -159,7 +159,7 @@ const TestimonialsSection = () => {
                   setTimeout(() => setAutoplay(true), 5000);
                 }}
                 className={`w-2 h-2 mx-1 rounded-full transition-all ${
-                  index === current ? "w-6 bg-gold" : "bg-gray-300"
+                  index === current ? "w-6 bg-mocha" : "bg-gray-300"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

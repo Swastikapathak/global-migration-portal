@@ -96,7 +96,7 @@ const StatsSection = () => {
   return (
     <section 
       ref={sectionRef}
-      className="section-padding bg-gold py-20"
+      className="section-padding bg-mocha py-20"
     >
       <div className="container-custom">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -106,7 +106,7 @@ const StatsSection = () => {
               className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105"
             >
               <div className="bg-gold/10 p-4 rounded-full mb-4">
-                <stat.icon size={28} className="text-gold" />
+                <stat.icon size={28} className="text-mocha" />
               </div>
               <h3 className="text-3xl md:text-4xl font-montserrat font-bold text-gray-900">
                 {counts[index]}{stat.prefix}

@@ -8,16 +8,18 @@ type LogoProps = {
 
 const Logo = ({ className = "", size = "md" }: LogoProps) => {
   const sizeClasses = {
-    sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-3xl",
+    sm: "w-8 h-8",
+    md: "w-12 h-12",
+    lg: "w-36 h-36",
   };
 
   return (
     <Link to="/" className={`flex items-center gap-2 ${className}`}>
-      <span className={`font-montserrat font-bold ${sizeClasses[size]} gold-text`}>
-        Global Migration Portal
-      </span>
+      <img
+        src="images/logo.jpeg" // Make sure your image is in the public folder
+        alt="Global Migration Portal Logo"
+        className={`${sizeClasses[size]} object-contain`}
+      />
     </Link>
   );
 };

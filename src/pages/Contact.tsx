@@ -15,7 +15,7 @@ const ContactPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              Contact <span className="text-gold">Us</span>
+              Contact <span className="text-mocha">Us</span>
             </h1>
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Get in touch with our immigration experts. We're here to answer your questions and help you start your migration journey.
@@ -37,7 +37,7 @@ const ContactPage = () => {
               <div className="space-y-6 mb-10">
                 <div className="flex items-start">
                   <div className="bg-gold/10 p-3 rounded-full mr-4">
-                    <MapPin className="text-gold" size={24} />
+                    <MapPin className="text-mocha" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Our Office</h3>
@@ -51,7 +51,7 @@ const ContactPage = () => {
 
                 <div className="flex items-start">
                   <div className="bg-gold/10 p-3 rounded-full mr-4">
-                    <Phone className="text-gold" size={24} />
+                    <Phone className="text-mocha" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
@@ -65,7 +65,7 @@ const ContactPage = () => {
 
                 <div className="flex items-start">
                   <div className="bg-gold/10 p-3 rounded-full mr-4">
-                    <Mail className="text-gold" size={24} />
+                    <Mail className="text-mocha" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
@@ -79,7 +79,7 @@ const ContactPage = () => {
 
                 <div className="flex items-start">
                   <div className="bg-gold/10 p-3 rounded-full mr-4">
-                    <Clock className="text-gold" size={24} />
+                    <Clock className="text-mocha" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Business Hours</h3>

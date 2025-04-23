@@ -54,12 +54,12 @@ const CtaSection = () => {
   };
   
   return (
-    <section className="section-padding bg-charcoal-gray text-white">
+    <section className="section-padding bg-mocha text-white">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Start Your <span className="text-gold">Immigration Journey</span>?
+              Ready to Start Your <span className="text-black">Immigration Journey</span>?
             </h2>
             <p className="text-gray-300 mb-8 text-lg">
               Book your personalized consultation with our immigration experts. We'll analyze your profile and recommend the best pathway for your goals.
@@ -73,13 +73,13 @@ const CtaSection = () => {
                 "Clear roadmap for your immigration journey"
               ].map((item, index) => (
                 <li key={index} className="flex items-center">
-                  <span className="inline-block w-2 h-2 bg-gold rounded-full mr-3"></span>
+                  <span className="inline-block w-2 h-2 bg-black rounded-full mr-3"></span>
                   {item}
                 </li>
               ))}
             </ul>
             
-            <Button asChild size="lg" className="bg-gold hover:bg-gold/90 text-black">
+            <Button asChild size="lg" className="bg-black hover:bg-gold/90 text-white">
               <Link to="/booking" className="flex items-center">
                 <CalendarPlus size={18} className="mr-2" /> Book Full Consultation
               </Link>
@@ -118,7 +118,7 @@ const CtaSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold ${
+                  className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   }`}
                   placeholder="Your email address"
@@ -136,7 +136,7 @@ const CtaSection = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold ${
+                  className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha ${
                     errors.phone ? "border-red-500" : "border-gray-300"
                   }`}
                   placeholder="Your phone number"
@@ -144,7 +144,7 @@ const CtaSection = () => {
                 {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
               </div>
               
-              <Button type="submit" className="w-full bg-gold hover:bg-gold/90 text-black font-medium py-3">
+              <Button type="submit" className="w-full bg-mocha hover:bg-gold/90 text-black font-medium py-3">
                 Request Call Back
               </Button>
               

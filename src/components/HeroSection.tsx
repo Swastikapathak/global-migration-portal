@@ -9,7 +9,8 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          /*src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" */
+          src="images/unspash1.jpg"
           alt="Global landmarks" 
           className="w-full h-full object-cover"
         />
@@ -20,21 +21,32 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
             <span className="block mb-3">Open Doors to</span> 
-            <span className="text-gold">Global Opportunities</span>
+            <span className="text-mocha">Global Opportunities</span>
           </h1>
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto animate-fade-in animation-delay-200">
             Expert guidance for your immigration journey to Canada, Australia, and Europe. 
             Transform your dreams into reality with our professional consultancy services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-300">
-            <Button asChild size="lg" className="bg-gold hover:bg-gold/90 text-black font-semibold px-8 text-base">
+            <Button asChild size="lg" className="bg-mocha hover:bg-gold/90 text-white font-semibold px-8 text-base">
               <Link to="/services">
                 Explore Services <ArrowRight size={18} className="ml-2" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 text-base">
+            {/*<Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-transparent px-8 text-base">
               <Link to="/booking">Book Consultation</Link>
-            </Button>
+            </Button>*/}
+            <Button
+  asChild
+  size="lg"
+  variant="outline"
+  className="bg-transparent text-yellow-500 border-white hover:bg-yellow-500 hover:text-white px-8 text-base transition-colors duration-300"
+>
+  <Link to="/booking">Book Consultation</Link>
+</Button>
+
+           
+
           </div>
         </div>
       </div>

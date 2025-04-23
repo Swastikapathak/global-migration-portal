@@ -24,8 +24,8 @@ export default {
 				opensans: ['Open Sans', 'sans-serif'],
 			},
 			colors: {
-				gold: '#FFD700',
-				'charcoal-gray': '#333333',
+				gold: '#FFD700',mocha: '#988374',
+				'charcoal': '#222222',
 				ivory: '#FFFFF0',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
