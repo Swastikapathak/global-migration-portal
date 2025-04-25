@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal text-white">
+    <footer className="bg-black text-white">
       <div className="container-custom pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="space-y-4">
@@ -113,19 +113,19 @@ const Footer = () => {
             <h3 className="font-montserrat text-lg font-semibold mb-5 text-mocha">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="mr-3 text-gold shrink-0 mt-1" size={18} />
+                <MapPin className="mr-3 text-mocha shrink-0 mt-1" size={18} />
                 <span className="text-gray-300">
-                  123 Migration Street, Suite 456, Global City, 10001
+                B-Ring Road, Street -220, Zone 26, Najma, Building No: 42, Office No: 501, P.O.Box: 31242, Doha, State of Qatar address
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="mr-3 text-gold shrink-0" size={18} />
+                <Phone className="mr-3 text-mocha shrink-0" size={18} />
                 <a href="tel:+917619523761" className="text-gray-300 hover:text-gold transition-colors duration-200">
-                  +91 7619523761
+                +974 74095473
                 </a>
               </li>
               <li className="flex items-center">
-                <Mail className="mr-3 text-gold shrink-0" size={18} />
+                <Mail className="mr-3 text-mocha shrink-0" size={18} />
                 <a href="mailto:info@globalmigration.com" className="text-gray-300 hover:text-gold transition-colors duration-200">
                   info@globalmigration.com
                 </a>

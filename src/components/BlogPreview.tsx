@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const blogPosts = [
   {
     id: 1,
-    title: "Latest Changes to Canada Express Entry System",
+    title: "Latest Changes to Canada Express Entry System ",
     excerpt: "Learn about the recent updates to the Canada Express Entry system and how they might affect your immigration application.",
     image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?ixlib=rb-4.0.3",
     date: "April 10, 2023",
@@ -73,7 +73,7 @@ const BlogPreview = () => {
         <div className="text-center mt-12">
           <Link
             to="/blog"
-            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-mocha text-black font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
+            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-charcoal text-mocha font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
           >
             View All Articles <ArrowRight size={18} className="ml-2" />
           </Link>

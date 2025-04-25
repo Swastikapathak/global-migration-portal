@@ -1,7 +1,6 @@
 
 import { useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import canadaImage from "/public/images/canada.avif";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -10,24 +9,22 @@ const services = [
     id: 1,
     title: "Canada Immigration",
     description: "Express Entry, Provincial Nominee Programs, Family Sponsorship, and Student Visas with Pathway to PR",
-    /*imageUrl: "https://images.unsplash.com/photo-1486130866659-157d3080a652?ixlib=rb-4.0.3",*/
-    /*imageUrl:"https://unsplash.com/photos/a-red-and-white-flag-KuvEmUutwcg",*/
-    src: canadaImage,
-    link: "/services"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1661645711536-2c06a6015e05?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FuYWRhJTIwZmxhZ3xlbnwwfHwwfHx8MA%3D%3D",
+    link: "/canada"
   },
   {
     id: 2,
     title: "Australia Migration",
     description: "Skilled Independent Visa, Employer Sponsored Visas, Business Innovation Visas, and Regional Migration Program",
-    imageUrl: "https://images.unsplash.com/photo-1494233914607-8d8722ce3906?ixlib=rb-4.0.3",
-    link: "/services"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1674588218282-0f031423194b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXVzdHJhaWxpYSUyMGZsYWd8ZW58MHx8MHx8fDA%3D",
+    link: "/australia"
   },
   {
     id: 3,
     title: "European Opportunities",
     description: "EU Blue Card Program, Entrepreneur Visas, Investment Immigration, and Work Permits",
-    imageUrl: "https://images.unsplash.com/photo-1519677584237-752f8853252e?ixlib=rb-4.0.3",
-    link: "/services"
+    imageUrl: "https://images.unsplash.com/photo-1625440153141-1ae4c27ff33b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXVyb3BlJTIwZmxhZ3xlbnwwfHwwfHx8MA%3D%3D",
+    link: "/european"
   },
 ];
 
@@ -71,7 +68,7 @@ const ServicesSection = () => {
     <section className="section-padding bg-white" ref={sectionRef}>
       <div className="container-custom">
         <h2 className="section-heading opacity-0">
-          Our <span className="text-gold">Services</span>
+          Our <span className="text-black">Services</span>
         </h2>
         <p className="section-subheading opacity-0">
           Comprehensive immigration solutions tailored to your needs. Our expert team guides you through every step of the process.
@@ -114,7 +111,7 @@ const ServicesSection = () => {
         <div className="text-center mt-12">
           <Link 
             to="/services" 
-            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-mocha text-black font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
+            className="inline-flex items-center py-3 px-6 rounded-full border-2 border-charcoal text-mocha font-semibold hover:bg-gold hover:text-black transition-colors duration-300"
           >
             View All Services <ArrowRight size={18} className="ml-2" />
           </Link>

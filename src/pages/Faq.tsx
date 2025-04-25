@@ -99,8 +99,8 @@ const FaqPage = () => {
       <section className="bg-black text-white py-16 md:py-24">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              Frequently Asked <span className="text-gold">Questions</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in hover:text-gold transition-all duration-500 ease-in-out">
+              Frequently Asked <span className="text-mocha">Questions</span>
             </h1>
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Find answers to common questions about immigration processes, requirements, and our services. If you don't see your question here, our team is ready to help.
@@ -113,7 +113,7 @@ const FaqPage = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-10 animate-on-scroll">General Immigration Questions</h2>
+            <h2 className="text-3xl font-bold mb-10 animate-on-scroll hover:text-gold transition-all duration-500 ease-in-out">General Immigration Questions</h2>
             <FaqAccordion faqs={generalFaqs} className="animate-on-scroll" />
           </div>
         </div>
@@ -123,24 +123,24 @@ const FaqPage = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-10 animate-on-scroll">Canada Immigration FAQs</h2>
+            <h2 className="text-3xl font-bold mb-10 animate-on-scroll hover:text-gold transition-all duration-500 ease-in-out">Canada Immigration FAQs</h2>
             <FaqAccordion faqs={canadaFaqs} className="animate-on-scroll" />
           </div>
 
           <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-10 animate-on-scroll">Australia Migration FAQs</h2>
+            <h2 className="text-3xl font-bold mb-10 animate-on-scroll hover:text-gold transition-all duration-500 ease-in-out">Australia Migration FAQs</h2>
             <FaqAccordion faqs={australiaFaqs} className="animate-on-scroll" />
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-10 animate-on-scroll">European Immigration FAQs</h2>
+            <h2 className="text-3xl font-bold mb-10 animate-on-scroll hover:text-gold transition-all duration-500 ease-in-out">European Immigration FAQs</h2>
             <FaqAccordion faqs={europeFaqs} className="animate-on-scroll" />
           </div>
         </div>
       </section>
 
       {/* Still Have Questions Section */}
-      <section className="py-16 md:py-24 bg-gold">
+      <section className="py-16 md:py-24 bg-mocha">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-black animate-on-scroll">Still Have Questions?</h2>
@@ -148,10 +148,10 @@ const FaqPage = () => {
               Our immigration experts are ready to answer your questions and provide personalized guidance based on your specific situation.
             </p>
             <div className="flex flex-wrap gap-4 justify-center animate-on-scroll">
-              <Button asChild size="lg" className="bg-black hover:bg-black/90 text-white">
+              <Button asChild size="lg" className="bg-black hover:bg-black/90 text-white transition-all duration-300 ease-in-out">
                 <Link to="/booking">Book a Consultation</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-black text-black hover:bg-black/10">
+              <Button asChild size="lg" variant="outline" className="border-black text-black hover:bg-black/10 transition-all duration-300 ease-in-out">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>

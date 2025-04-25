@@ -17,13 +17,13 @@ const BookingPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              Book Your <span className="text-gold">Consultation</span>
+              Book Your <span className="text-mocha">Consultation</span>
             </h1>
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Schedule a personalized consultation with our immigration experts to discuss your options and develop a tailored immigration strategy.
             </p>
             <div className="mt-4">
-              <Button asChild className="bg-gold hover:bg-gold/90 text-black">
+              <Button asChild className="bg-mocha hover:bg-gold/90 text-black">
                 <Link to="/payment">
                   Skip to Payment Page
                 </Link>
@@ -43,14 +43,14 @@ const BookingPage = () => {
                 Our consultation sessions are designed to provide you with personalized immigration advice tailored to your unique situation and goals.
               </p>
               
-              <div className="bg-charcoal border border-gold/20 rounded-lg p-6 mb-8">
+              <div className="bg-mocha border border-gold/20 rounded-lg p-6 mb-8">
                 <h3 className="flex items-center text-xl text-white font-bold mb-4">
                   <ClipboardList className="mr-2 text-white" size={24} />
                   What to Expect
                 </h3>
                 <ul className="space-y-3 text-white">
                   <li className="flex items-start">
-                    <span className="bg-mocha text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-charcoal text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       1
                     </span>
                     <span>
@@ -58,7 +58,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-charcoal text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       2
                     </span>
                     <span>
@@ -66,7 +66,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-charcoal text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       3
                     </span>
                     <span>
@@ -74,7 +74,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-charcoal text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       4
                     </span>
                     <span>
@@ -82,7 +82,7 @@ const BookingPage = () => {
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="bg-mocha text-black rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
+                    <span className="bg-charcoal text-white rounded-full w-5 h-5 flex items-center justify-center mr-3 flex-shrink-0 font-medium text-sm">
                       5
                     </span>
                     <span>

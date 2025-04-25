@@ -153,7 +153,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           rows={6}
-          className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-mocha ${
+          className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gold ${
             errors.message ? "border-red-500" : "border-gray-300"
           }`}
           placeholder="Your message"

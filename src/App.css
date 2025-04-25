@@ -1,9 +1,10 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 rem;
   text-align: center;
 }
+
 
 .logo {
   height: 6em;
@@ -39,4 +40,107 @@
 
 .read-the-docs {
   color: #888;
+}
+/* ServicesPage.css */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.8s ease-in-out;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-on-scroll-slide {
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+/* Define the animation for the hover effect */
+@keyframes slideInColor {
+  0% {
+    background-position: 100% 50%;
+    color: #fff;
+  }
+  50% {
+    background-position: 0 50%;
+    color: #fff;
+  }
+  100% {
+    background-position: 100% 50%;
+    color: #fff;
+  }
+}
+
+.animate-slide-color {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1rem;
+
+  background-size: 400% 100%;
+  background-position: 100% 50%;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/* Apply the color change animation on hover */
+.animate-slide-color:hover {
+  animation: slideInColor 1s ease-out forwards;
+  color: black;
+}
+
+.animate-slide-color:hover svg {
+  fill: black; /* Change icon color on hover */
+}
+
+.service-detail-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }

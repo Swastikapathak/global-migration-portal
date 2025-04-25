@@ -17,7 +17,7 @@ const ServicesPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              Our <span className="text-gold">Immigration Services</span>
+              Our <span className="text-mocha">Immigration Services</span>
             </h1>
             <p className="text-lg opacity-90 mb-8 animate-fade-in">
               Comprehensive immigration solutions tailored to your needs. Explore our range of services designed to make your migration journey smooth and successful.
@@ -31,7 +31,7 @@ const ServicesPage = () => {
         <div className="container-custom">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">Canada Immigration Services</h2>
-            <div className="h-1 w-20 bg-gold mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-mocha mx-auto mb-6"></div>
             <p className="text-gray-700 max-w-3xl mx-auto">
               Canada offers multiple pathways for skilled workers, entrepreneurs, and families looking to build a new life. Our experts will guide you through the most suitable options for your circumstances.
             </p>
@@ -155,7 +155,7 @@ const ServicesPage = () => {
         <div className="container-custom">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">European Opportunities</h2>
-            <div className="h-1 w-20 bg-gold mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-mocha mx-auto mb-6"></div>
             <p className="text-gray-700 max-w-3xl mx-auto">
               Europe offers diverse immigration pathways across multiple countries. Our experts specialize in navigating complex European immigration systems to find the best option for your situation.
             </p>
@@ -251,7 +251,7 @@ const ServicesPage = () => {
         <div className="container-custom">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl font-bold mb-6">Australia Migration Options</h2>
-            <div className="h-1 w-20 bg-gold mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-mocha mx-auto mb-6"></div>
             <p className="text-gray-700 max-w-3xl mx-auto">
               Australia's points-based immigration system offers multiple pathways for skilled workers, investors, and family members. Our experts will help you navigate the complex system for the best outcomes.
             </p>
@@ -374,7 +374,7 @@ const ServicesPage = () => {
             Book a consultation with our expert team to discuss your specific situation and discover the best immigration pathway for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll">
-            <Button asChild size="lg" className="bg-gold hover:bg-gold/90 text-black">
+            <Button asChild size="lg" className="bg-mocha hover:bg-gold/90 text-black">
               <Link to="/booking">Book Consultation</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">

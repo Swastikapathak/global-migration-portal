@@ -21,6 +21,9 @@ const BookingPage = lazy(() => import("./pages/Booking"));
 const PaymentPage = lazy(() => import("./pages/Payment"));
 const ThankYouPage = lazy(() => import("./pages/ThankYou"));
 const BlogPage = lazy(() => import("./pages/Blog"));
+const CanadaPage = lazy(() => import("./pages/Canada"));
+const AustraliaPage = lazy(() => import("./pages/Australia"));
+const EuropeanPage = lazy(() => import("./pages/European"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Loading component
@@ -61,6 +64,22 @@ const App = () => (
               <Route path="services" element={
                 <Suspense fallback={<PageLoader />}>
                   <ServicesPage />
+                </Suspense>
+              } />
+              <Route path="canada" element={
+                <Suspense fallback={<PageLoader />}>
+                  <CanadaPage />
+                </Suspense>
+              } />
+
+              <Route path="australia" element={
+                <Suspense fallback={<PageLoader />}>
+                  <AustraliaPage />
+                </Suspense>
+              } />
+              <Route path="european" element={
+                <Suspense fallback={<PageLoader />}>
+                  <EuropeanPage />
                 </Suspense>
               } />
               <Route path="faq" element={
